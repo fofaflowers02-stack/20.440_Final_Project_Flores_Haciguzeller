@@ -1,0 +1,7 @@
+metric,value
+Number of labeled samples,17
+Number of Control samples,8
+Number of PCOS samples,9
+Number of probes tested,22283
+Number of genes after collapsing probes,13299
+Significant genes (FDR < 0.05 and |logFC| > 0.5),0
