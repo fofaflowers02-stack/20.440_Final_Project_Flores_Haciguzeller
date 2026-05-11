@@ -114,17 +114,11 @@ This project takes an integrative, systems-level approach to characterize adipos
 
 #### 2. Principal Component Analysis (PCA)
 
-![PCA of Omental Adipose Gene Expression](PCA.png)
-
 - Expression matrix standardized (StandardScaler) and decomposed into 2 PCs.
 - PC1 (22.7%) + PC2 (13.5%) = 36% variance explained.
 - No clear group separation; consistent with subtle PCOS-specific effects in an obesity-controlled comparison.
 
 #### 3. Differential Expression Analysis
-
-![Volcano Plot](differential_gene_expression_analysis_volcano_plot.png)
-
-![Clustered Heatmap of Top DEGs](differential_gene_expression_analysis_clustered_heatmap.png)
 
 - **Welch's t-test** applied probe-by-probe; log2FC computed from mean expression.
 - **Benjamini–Hochberg FDR correction** applied across all probes.
@@ -133,10 +127,6 @@ This project takes an integrative, systems-level approach to characterize adipos
 
 #### 4. Gene Set Enrichment Analysis (GSEA)
 
-![GSEA Positively Enriched Pathways](gene_set_enrichment_analysis_positively_enriched_pathways.png)
-
-![GSEA Negatively Enriched Pathways](gene_set_enrichment_analysis_negatively_enriched_pathways.png)
-
 - Genes ranked by composite score: logFC × (−log10 p-value).
 - Preranked GSEA via **gseapy** against **MSigDB Hallmark 2020** gene sets.
 - **Top positively enriched pathways** (upregulated in PCOS): Adipogenesis (NES ≈ 2.17), Oxidative Phosphorylation, Protein Secretion, Fatty Acid Metabolism, Reactive Oxygen Species Pathway, Bile Acid Metabolism, Peroxisome, TGF-beta Signaling, Notch Signaling.
@@ -144,19 +134,11 @@ This project takes an integrative, systems-level approach to characterize adipos
 
 #### 5. Transcription Factor (TF) Enrichment Analysis
 
-![TF Enrichment — Upregulated Genes](transcription_factor_enrichment_for_upregulated_genes.png)
-
-![TF Enrichment — Downregulated Genes](transcription_factor_enrichment_for_downregulated_genes.png)
-
 - Top 300 upregulated and top 300 downregulated genes analyzed via **Enrichr** (ChEA_2016 gene set).
 - Upregulated TF enrichments: **HNF4A**, **NUCKS1**, **CREB1**, **PPARG**, **WT1**, **KDM5B**, **ZFX**, **DMRT1**, **RUNX1**.
 - Downregulated TF enrichments: **BACH1**, **NUCKS1**, **KDM5B**, **RELA**, **SMAD2**, **SMAD3**, **HNF4A**, **DCP1A**, **EKLF**.
 
 #### 6. Sample Similarity & Top Variable Genes
-
-![Sample-to-Sample Pearson Correlation Heatmap](sample-to-sample_pearson_correlation_heatmap.png)
-
-![Clustered Heatmap of Top Variable Genes](clustered_heatmap_of_the_top_variable_genes.png)
 
 - **Sample-to-sample Pearson correlation heatmap** generated (r range: ~0.86–1.00); no outliers detected.
 - **Top 50 most variable genes** visualized as a clustered heatmap (row z-scored), revealing structured co-expression patterns: ECM cluster (*COL1A1*, *COL1A2*, *COL3A1*), inflammatory cluster (*IL6*, *CXCL8*, *JUN*, *FOS*), metabolic cluster (*FABP4*, *GPX3*, *PLIN1*).
