@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the code, data, and figures for the final project for **20.440 (Analysis of Biological Networks)** at MIT, completed by **Sofia Flores** and **[Haciguzeller]**. The project investigates differential gene expression and gene regulatory network (GRN) structure, identifying hub genes and key regulators through network topology analysis.
+This repository contains the code, data, and figures for the final project for **20.440 (Analysis of Biological Networks)** at MIT, completed by **Sofia Flores** and **H. Zeynep Haciguzeller**. The project investigates differential gene expression and gene regulatory network (GRN) structure, identifying hub genes and key regulators through network topology analysis.
 
 ---
 
@@ -85,6 +85,6 @@ pip install pandas numpy matplotlib seaborn networkx
 ## Authors
 
 - **Sofia Flores** — MIT
-- **[Haciguzeller]** — MIT
+- **H. Zeynep Haciguzeller** — MIT
 
 *20.440 Analysis of Biological Networks, Spring 2025*
