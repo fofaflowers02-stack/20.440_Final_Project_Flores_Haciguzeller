@@ -218,6 +218,13 @@ pip install pandas numpy scipy matplotlib seaborn scikit-learn statsmodels gseap
 | `nmf_module_activity_by_sample.csv` | Per-sample module activity with group labels |
 | `nmf_module_stats.csv` | Module activity group comparison statistics (Welch's t-test) |
 
+## Output Files (GSE267287 Pipeline)
+| File | Description |
+|---|---|
+
+| `differentially_expressed_genes.csv` | Matrix of 86 identified DEGs |
+| `ex_matrix_filtered.csv` | Matrix with filtered and normalized values for correlation network |
+
 ---
 
 ## Authors
