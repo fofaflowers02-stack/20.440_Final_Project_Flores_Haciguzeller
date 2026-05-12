@@ -124,7 +124,7 @@ This project takes an integrative, systems-level approach to characterize adipos
 
 ### File Descriptions
 
-**`PCOS_vs_Healthy/`** — Dataset 1: PCOS vs healthy controls (GSE267287, RNA-seq)
+**`PCOS_vs_Healthy/`** — Dataset 1: PCOS vs healthy controls (GSE267287, RNA-seq) (Coding, visualization, and analysis done by Sofia Flores)
 
 | File | Description |
 |---|---|
@@ -145,7 +145,7 @@ This project takes an integrative, systems-level approach to characterize adipos
 | `Images/Quartile4_GSEA_Graph.png` | GSEA results for top-quartile hub genes |
 | `Paper Figures/20.440 Figure 1.png` | Multi-panel paper figure for Dataset 1 |
 
-**`Obesity with PCOS vs Obesity without PCOS_DATASET 2 Analysis/`** — Dataset 2: obese PCOS vs obese controls (GSE5090, microarray)
+**`Obesity with PCOS vs Obesity without PCOS_DATASET 2 Analysis/`** — Dataset 2: obese PCOS vs obese controls (GSE5090, microarray) (Coding, visualization, and analysis done by H. Zeynep Haciguzeller)
 
 | File | Description |
 |---|---|
