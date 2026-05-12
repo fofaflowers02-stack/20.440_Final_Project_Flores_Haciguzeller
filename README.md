@@ -51,66 +51,64 @@ This project takes an integrative, systems-level approach to characterize adipos
 │
 ├── README.md
 │
-├── PCOS_vs_Healthy/                                              # Dataset 1: PCOS vs Healthy (GSE267287)
-│   │
+├── PCOS_vs_Healthy/
 │   ├── Code/
-│   │   └── 20_440_Project_FinalCode_SofiaFlores.ipynb           # RNA-seq: DEG, GRN, hub genes
+│   │   └── 20_440_Project_FinalCode_SofiaFlores.ipynb
 │   │
 │   ├── Data_Files/
-│   │   ├── GSE267287_PCOS_MPC_readcount_table.txt.gz            # Raw read count matrix (GEO)
-│   │   ├── clinical_df.csv                                       # Sample metadata / clinical labels
-│   │   ├── df_PCOS.csv                                           # All PCOS samples expression data
-│   │   ├── df_PCOS_no_testosterone.csv                           # PCOS samples (no testosterone)
-│   │   ├── df_PCOS_w_testosterone.csv                            # PCOS samples (with testosterone)
-│   │   ├── df_control.csv                                        # All control samples expression data
-│   │   ├── df_control_no_testosterone.csv                        # Control samples (no testosterone)
-│   │   ├── df_control_w_testosterone.csv                         # Control samples (with testosterone)
-│   │   └── differentially_expressed_genes.csv                    # DEG results (padj < 0.05, |log2FC| > 0.5)
+│   │   ├── GSE267287_PCOS_MPC_readcount_table.txt.gz
+│   │   ├── clinical_df.csv
+│   │   ├── df_PCOS.csv
+│   │   ├── df_PCOS_no_testosterone.csv
+│   │   ├── df_PCOS_w_testosterone.csv
+│   │   ├── df_control.csv
+│   │   ├── df_control_no_testosterone.csv
+│   │   ├── df_control_w_testosterone.csv
+│   │   └── differentially_expressed_genes.csv
 │   │
 │   ├── Images/
-│   │   ├── Degree_Centrality_Graph.png                           # Degree centrality distribution (GRN)
-│   │   ├── Differential_Gene_Expression_VolcanoPlot.png          # Volcano plot of DEGs
-│   │   ├── Gene_Correlation_Network.png                          # Full gene correlation network
-│   │   ├── Gene_Regulatory_Network_HubsOnly.png                  # GRN hub genes only (Q4)
-│   │   └── Quartile4_GSEA_Graph.png                              # GSEA results for Q4 hub genes
+│   │   ├── Degree_Centrality_Graph.png
+│   │   ├── Differential_Gene_Expression_VolcanoPlot.png
+│   │   ├── Gene_Correlation_Network.png
+│   │   ├── Gene_Regulatory_Network_HubsOnly.png
+│   │   └── Quartile4_GSEA_Graph.png
 │   │
 │   └── Paper Figures/
-│       └── 20.440 Figure 1.png                                   # Multi-panel paper figure (Dataset 1)
+│       └── 20.440 Figure 1.png
 │
-└── Obesity with PCOS vs Obesity without PCOS_DATASET 2 Analysis/  # Dataset 2: GSE5090
-    │
+└── Obesity with PCOS vs Obesity without PCOS_DATASET 2 Analysis/
     ├── CODE/
-    │   └── GSE5090_data_analysis_ipynb_05_11.ipynb               # Microarray pipeline: PCA, DEA, GSEA, NMF
+    │   └── GSE5090_data_analysis_ipynb_05_11.ipynb
     │
     ├── DATASET/
-    │   └── GSE5090_RAW_dataset.tar                               # Raw microarray data (GEO)
+    │   └── GSE5090_RAW_dataset.tar
     │
     ├── DATA FILES/
-    │   ├── GSE5090_series_matrix.txt.gz                          # GEO Series Matrix (normalized expression)
-    │   ├── processed_expression_matrix.csv                       # Processed probe-by-sample matrix
-    │   ├── processed_expression_annotated.csv                    # Expression matrix with gene annotations
-    │   ├── phenotype_table.csv                                   # Sample metadata with PCOS/control labels
-    │   ├── gene_level_differential_expression.csv                # Gene-level DEA results
-    │   ├── probe_level_differential_expression.csv               # Probe-level DEA results
-    │   ├── significant_genes_for_pathway_analysis.csv            # Filtered gene list for pathway analysis
-    │   ├── summary_table.csv                                     # Summary statistics table
-    │   ├── gsea_hallmark_results.csv                             # Full GSEA Hallmark results
-    │   ├── gsea_top_positive_hallmark.csv                        # Top positively enriched GSEA pathways
-    │   ├── gsea_top_negative_hallmark.csv                        # Top negatively enriched GSEA pathways
-    │   ├── leading_edge_genes_positive_pathways.csv              # Leading-edge genes (positive pathways)
-    │   ├── leading_edge_genes_negative_pathways.csv              # Leading-edge genes (negative pathways)
-    │   ├── leading_edge_genes_top_hallmark.csv                   # Leading-edge genes (top Hallmark terms)
-    │   ├── tf_enrichment_upregulated.csv                         # TF enrichment for upregulated genes
-    │   ├── tf_enrichment_downregulated.csv                       # TF enrichment for downregulated genes
-    │   ├── nmf_gene_weights.csv                                  # NMF W matrix (genes × modules)
-    │   ├── nmf_sample_loadings.csv                               # NMF H matrix (modules × samples)
-    │   ├── nmf_module_activity_by_sample.csv                     # Per-sample module activity by group
-    │   └── nmf_module_stats.csv                                  # Module activity group comparison stats
+    │   ├── GSE5090_series_matrix.txt.gz
+    │   ├── processed_expression_matrix.csv
+    │   ├── processed_expression_annotated.csv
+    │   ├── phenotype_table.csv
+    │   ├── gene_level_differential_expression.csv
+    │   ├── probe_level_differential_expression.csv
+    │   ├── significant_genes_for_pathway_analysis.csv
+    │   ├── summary_table.csv
+    │   ├── gsea_hallmark_results.csv
+    │   ├── gsea_top_positive_hallmark.csv
+    │   ├── gsea_top_negative_hallmark.csv
+    │   ├── leading_edge_genes_positive_pathways.csv
+    │   ├── leading_edge_genes_negative_pathways.csv
+    │   ├── leading_edge_genes_top_hallmark.csv
+    │   ├── tf_enrichment_upregulated.csv
+    │   ├── tf_enrichment_downregulated.csv
+    │   ├── nmf_gene_weights.csv
+    │   ├── nmf_sample_loadings.csv
+    │   ├── nmf_module_activity_by_sample.csv
+    │   └── nmf_module_stats.csv
     │
     └── FIGURES/
-        ├── 20.440 Figure 2.png                                   # Multi-panel paper figure (Dataset 2, part 1)
-        ├── 20.440 Figure 3.png                                   # Multi-panel paper figure (Dataset 2, part 2)
-        ├── PCA.png                                               # PCA of omental adipose gene expression
+        ├── 20.440 Figure 2.png
+        ├── 20.440 Figure 3.png
+        ├── PCA.png
         ├── differential gene expression analysis_volcano plot.png
         ├── differential gene expression analysis_clustered heatmap.png
         ├── gene set enrichment analysis_positively enriched pathways.png
@@ -119,10 +117,74 @@ This project takes an integrative, systems-level approach to characterize adipos
         ├── transcription factor enrichment_for downregulated genes.png
         ├── sample-to-sample pearson correlation heatmap.png
         ├── clustered heatmap of the top variable genes.png
-        ├── non-negative matrix factorization_module 1.png        # NMF Module 1 boxplot
-        ├── non-negative matrix factorization_module 2.png        # NMF Module 2 boxplot
-        └── non-negative matrix factorization_module 3.png        # NMF Module 3 boxplot
+        ├── non-negative matrix factorization_module 1.png
+        ├── non-negative matrix factorization_module 2.png
+        └── non-negative matrix factorization_module 3.png
 \```
+
+### File Descriptions
+
+**`PCOS_vs_Healthy/`** — Dataset 1: PCOS vs healthy controls (GSE267287, RNA-seq)
+
+| File | Description |
+|---|---|
+| `Code/20_440_Project_FinalCode_SofiaFlores.ipynb` | RNA-seq analysis: DEG, GRN construction, hub gene identification |
+| `Data_Files/GSE267287_PCOS_MPC_readcount_table.txt.gz` | Raw read count matrix from GEO |
+| `Data_Files/clinical_df.csv` | Sample metadata and clinical labels |
+| `Data_Files/df_PCOS.csv` | All PCOS samples expression data |
+| `Data_Files/df_PCOS_no_testosterone.csv` | PCOS samples without testosterone treatment |
+| `Data_Files/df_PCOS_w_testosterone.csv` | PCOS samples with testosterone treatment |
+| `Data_Files/df_control.csv` | All control samples expression data |
+| `Data_Files/df_control_no_testosterone.csv` | Control samples without testosterone treatment |
+| `Data_Files/df_control_w_testosterone.csv` | Control samples with testosterone treatment |
+| `Data_Files/differentially_expressed_genes.csv` | DEG results (padj < 0.05, \|log2FC\| > 0.5) |
+| `Images/Degree_Centrality_Graph.png` | Degree centrality distribution of GRN nodes |
+| `Images/Differential_Gene_Expression_VolcanoPlot.png` | Volcano plot of differentially expressed genes |
+| `Images/Gene_Correlation_Network.png` | Full gene correlation network (all DEGs) |
+| `Images/Gene_Regulatory_Network_HubsOnly.png` | GRN with Q4 hub genes only |
+| `Images/Quartile4_GSEA_Graph.png` | GSEA results for top-quartile hub genes |
+| `Paper Figures/20.440 Figure 1.png` | Multi-panel paper figure for Dataset 1 |
+
+**`Obesity with PCOS vs Obesity without PCOS_DATASET 2 Analysis/`** — Dataset 2: obese PCOS vs obese controls (GSE5090, microarray)
+
+| File | Description |
+|---|---|
+| `CODE/GSE5090_data_analysis_ipynb_05_11.ipynb` | Microarray pipeline: PCA, DEA, GSEA, TF enrichment, NMF |
+| `DATASET/GSE5090_RAW_dataset.tar` | Raw microarray data from GEO |
+| `DATA FILES/GSE5090_series_matrix.txt.gz` | GEO Series Matrix (pre-normalized expression values) |
+| `DATA FILES/processed_expression_matrix.csv` | Processed probe-by-sample expression matrix |
+| `DATA FILES/processed_expression_annotated.csv` | Expression matrix with GPL96 gene symbol annotations |
+| `DATA FILES/phenotype_table.csv` | Sample metadata with PCOS/control group labels |
+| `DATA FILES/gene_level_differential_expression.csv` | Gene-level DEA results (best probe per gene) |
+| `DATA FILES/probe_level_differential_expression.csv` | Probe-level DEA results (logFC, p-value, FDR) |
+| `DATA FILES/significant_genes_for_pathway_analysis.csv` | Filtered gene list used for pathway analysis |
+| `DATA FILES/summary_table.csv` | Summary statistics table |
+| `DATA FILES/gsea_hallmark_results.csv` | Full GSEA Hallmark 2020 results |
+| `DATA FILES/gsea_top_positive_hallmark.csv` | Top positively enriched GSEA pathways |
+| `DATA FILES/gsea_top_negative_hallmark.csv` | Top negatively enriched GSEA pathways |
+| `DATA FILES/leading_edge_genes_positive_pathways.csv` | Leading-edge genes for positive pathways |
+| `DATA FILES/leading_edge_genes_negative_pathways.csv` | Leading-edge genes for negative pathways |
+| `DATA FILES/leading_edge_genes_top_hallmark.csv` | Leading-edge genes for top Hallmark terms |
+| `DATA FILES/tf_enrichment_upregulated.csv` | TF enrichment results for upregulated genes |
+| `DATA FILES/tf_enrichment_downregulated.csv` | TF enrichment results for downregulated genes |
+| `DATA FILES/nmf_gene_weights.csv` | NMF W matrix (genes × modules) |
+| `DATA FILES/nmf_sample_loadings.csv` | NMF H matrix (modules × samples) |
+| `DATA FILES/nmf_module_activity_by_sample.csv` | Per-sample module activity with group labels |
+| `DATA FILES/nmf_module_stats.csv` | Module activity group comparison statistics |
+| `FIGURES/20.440 Figure 2.png` | Multi-panel paper figure (Dataset 2, part 1) |
+| `FIGURES/20.440 Figure 3.png` | Multi-panel paper figure (Dataset 2, part 2) |
+| `FIGURES/PCA.png` | PCA of omental adipose gene expression |
+| `FIGURES/differential gene expression analysis_volcano plot.png` | Volcano plot (Welch's t-test + FDR) |
+| `FIGURES/differential gene expression analysis_clustered heatmap.png` | Top DEG clustered heatmap |
+| `FIGURES/gene set enrichment analysis_positively enriched pathways.png` | GSEA positive NES barplot |
+| `FIGURES/gene set enrichment analysis_negatively enriched pathways.png` | GSEA negative NES barplot |
+| `FIGURES/transcription factor enrichment_for upregulated genes.png` | TF enrichment barplot (upregulated) |
+| `FIGURES/transcription factor enrichment_for downregulated genes.png` | TF enrichment barplot (downregulated) |
+| `FIGURES/sample-to-sample pearson correlation heatmap.png` | Sample-to-sample correlation heatmap |
+| `FIGURES/clustered heatmap of the top variable genes.png` | Top 50 variable genes clustered heatmap |
+| `FIGURES/non-negative matrix factorization_module 1.png` | NMF Module 1 activity boxplot |
+| `FIGURES/non-negative matrix factorization_module 2.png` | NMF Module 2 activity boxplot |
+| `FIGURES/non-negative matrix factorization_module 3.png` | NMF Module 3 activity boxplot |
 ---
 
 ## Methods
