@@ -199,7 +199,12 @@ pip install pandas numpy scipy matplotlib seaborn scikit-learn statsmodels gseap
 > **Note:** The GSE5090 notebook was developed in Google Colab. If running locally, remove or replace the `drive.mount()` cell and update the `WORKDIR` path to a local directory.
 
 ---
+## Output Files (GSE267287 Pipeline)
 
+| File | Description |
+|---|---|
+| `differentially_expressed_genes.csv` | Matrix of 86 identified DEGs |
+| `ex_matrix_filtered.csv` | Matrix with filtered and normalized values for correlation network |
 ## Output Files (GSE5090 Pipeline)
 
 | File | Description |
@@ -217,13 +222,6 @@ pip install pandas numpy scipy matplotlib seaborn scikit-learn statsmodels gseap
 | `nmf_sample_loadings.csv` | NMF H matrix (modules × samples) |
 | `nmf_module_activity_by_sample.csv` | Per-sample module activity with group labels |
 | `nmf_module_stats.csv` | Module activity group comparison statistics (Welch's t-test) |
-
-## Output Files (GSE267287 Pipeline)
-| File | Description |
-|---|---|
-
-| `differentially_expressed_genes.csv` | Matrix of 86 identified DEGs |
-| `ex_matrix_filtered.csv` | Matrix with filtered and normalized values for correlation network |
 
 ---
 
